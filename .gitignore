@@ -1,0 +1,10 @@
+# Created from scratch repo for learning AI from fundamentals to frontier AI.
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+*.log

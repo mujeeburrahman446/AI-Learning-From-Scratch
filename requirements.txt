@@ -1,0 +1,21 @@
+# Python packages used across the learning path
+
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+jupyter
+pytest
+fastapi
+uvicorn
+requests
+beautifulsoup4
+scrapy
+pytorch
+transformers
+datasets
+mlflow
+docker
+kubernetes
+huggingface-hub
