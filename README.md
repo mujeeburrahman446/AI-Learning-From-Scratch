@@ -25,6 +25,19 @@ The goal is simple:
 - build practical projects
 - then move toward production-grade and frontier AI systems
 
+## Practical work included
+
+This repository now includes theory and hands-on practical labs. The practical work section helps learners do actual coding exercises instead of only reading.
+
+### Practical work folder
+- `practical_work/README.md`
+- Python exercises
+- NumPy / Pandas exercises
+- linear regression implementation
+- PyTorch quick model example
+- simple retrieval-based AI demo
+- agent/tool demo
+
 ## Repository Structure
 
 ```text
@@ -35,38 +48,64 @@ AI-Learning-From-Scratch/
 ├── .gitignore
 ├── requirements.txt
 ├── 00_foundations/
-│   └── README.md
+│   ├── mathematics_for_ai.md
+│   ├── statistics_and_probability.md
+│   └── python_from_scratch.md
 ├── 10_data_analytics/
-│   └── README.md
+│   ├── README.md
+│   └── numpy_pandas_sql.md
 ├── 20_data_engineering/
-│   └── README.md
+│   └── etl_data_pipelines.md
 ├── 30_data_science/
 │   └── README.md
 ├── 40_machine_learning/
-│   └── README.md
+│   ├── README.md
+│   └── machine_learning_theory.md
 ├── 50_deep_learning/
-│   └── README.md
+│   ├── README.md
+│   ├── deep_learning_theory.md
+│   └── pytorch_basics.md
 ├── 60_cuda_gpu/
-│   └── README.md
+│   ├── README.md
+│   ├── cuda_theory.md
+│   └── CUDA and GPU Programming.md
 ├── 70_devops/
-│   └── README.md
+│   ├── README.md
+│   ├── devops_theory.md
+│   └── docker_kubernetes.md
 ├── 80_mlops/
-│   └── README.md
+│   └── mlops_pipeline.md
 ├── 90_genai/
-│   └── README.md
+│   ├── README.md
+│   ├── llm_genai_basics.md
+│   └── transformer_theory.md
 ├── 100_rl_post_training/
-│   └── README.md
+│   ├── README.md
+│   ├── rl_theory.md
+│   └── ppo_dpo_rlhf.md
 ├── 110_agents/
-│   └── README.md
+│   ├── README.md
+│   └── agentic_ai_basics.md
 ├── 120_frontier_ai/
-│   └── README.md
+│   ├── README.md
+│   └── distributed_training.md
 ├── 130_projects/
 │   └── README.md
 ├── 140_resources/
 │   └── README.md
-└── examples/
-    ├── hello_world.py
-    └── numpy_linear_regression.py
+├── examples/
+│   ├── hello_world.py
+│   ├── numpy_linear_regression_example.py
+│   └── python_basics_example.py
+├── practical_work/
+│   ├── README.md
+│   ├── 01_python_lab.py
+│   ├── 02_numpy_eda.py
+│   ├── 03_linear_regression_from_scratch.py
+│   ├── 04_pytorch_quick_model.py
+│   ├── 05_rag_demo.py
+│   └── 06_agent_tool_demo.py
+└── requirements.txt
 ```
 
 ## Learning Path
@@ -75,11 +114,9 @@ AI-Learning-From-Scratch/
 - Python basics
 - Linux and shell
 - Git and GitHub
-- Data structures and algorithms
-- Object-oriented programming
+- OOP
 - Statistics and probability
 - Linear algebra
-- Basic systems understanding
 
 ### 2. Data Analytics
 - NumPy from scratch
@@ -87,171 +124,139 @@ AI-Learning-From-Scratch/
 - SQL
 - EDA
 - Visualization
-- Data cleaning and transformation
+- Data cleaning
 
 ### 3. Data Engineering
 - ETL
-- Pipelines
+- Data pipelines
 - Airflow
 - Kafka
 - Spark
-- Data warehousing
-- Data lakes
-- Data quality
+- Data warehouse and lake concepts
 
 ### 4. Data Science
-- Feature engineering
-- Experiment design
-- Evaluation metrics
-- Model selection
-- Regression and classification
-- Clustering and unsupervised learning
+- feature engineering
+- experiment design
+- evaluation
+- regression and classification
+- clustering
 
 ### 5. Machine Learning
-- Linear regression from scratch
-- Logistic regression
-- Decision trees
-- Random forests
-- SVMs
-- Gradient boosting
+- linear regression
+- logistic regression
+- decision trees
+- random forests
 - XGBoost
-- Model deployment patterns
+- SVMs
+- clustering
+- PCA
 
 ### 6. Deep Learning
-- Neural networks from scratch
-- Backpropagation
+- neural networks
+- backpropagation
 - PyTorch basics
 - CNNs
 - RNNs
-- LSTMs
-- Attention and Transformers
+- attention and transformers
 
 ### 7. CUDA / GPU Programming
-- CPU vs GPU
-- Threads, blocks, grids
-- Memory hierarchy
-- CUDA kernels
-- Matrix multiply kernels
-- cuBLAS
-- cuDNN
-- multi-GPU and NCCL basics
+- GPU architecture
+- parallelism
+- threads, blocks, grids
+- memory hierarchy
+- kernels
+- multi-GPU basics
 
 ### 8. DevOps
 - Docker
-- Docker Compose
 - Kubernetes
 - Helm
 - Terraform
 - CI/CD
-- Monitoring and logging
-- Infrastructure as code
+- monitoring
 
 ### 9. MLOps / GenAI Ops
-- Experiment tracking
-- Model registry
-- Model serving
-- Observability
-- Drift monitoring
-- Deployment pipelines
-- Security and governance
+- experiment tracking
+- model deployment
+- model monitoring
+- evaluation pipelines
+- safety workflows
 
 ### 10. GenAI / LLMs
-- Tokenization
-- Embeddings
-- Transformer architecture
-- Prompt engineering
+- tokenization
+- embeddings
+- transformers
+- prompt engineering
 - RAG
-- Fine-tuning
-- Evaluations
-- Safety and guardrails
+- fine-tuning
+- evaluations
+- guardrails
 
 ### 11. RL and Post-Training
-- Bandits
+- bandits
 - MDPs
 - Q-learning
-- Policy gradients
+- policy gradients
 - PPO
 - RLHF
-- Reward modeling
 - DPO
 - ORPO
 - KTO
 - GRPO
-- Alignment and post-training
+- alignment
 
 ### 12. Agents and Agentic AI
-- Tool calling
+- tool calling
 - ReAct
-- Memory
-- Planning
-- Multi-agent systems
-- Swarm agents
-- Agent evaluation
+- memory
+- planning
+- multi-agent systems
+- swarm patterns
 
 ### 13. Frontier AI
-- Scaling laws
-- Data parallelism
-- Model parallelism
-- Pipeline parallelism
-- Tensor parallelism
-- Mixture of Experts
-- Inference optimization
-- Quantization
-- LLM serving systems
+- scaling laws
+- distributed training
+- model parallelism
+- tensor parallelism
+- MoE
+- quantization
+- long context
 
 ### 14. API, Deployment, and Production
 - FastAPI
-- REST APIs
-- Authentication
-- Cloud deployment
-- Kubernetes serving
-- Autoscaling
-- Monitoring
-- Security
-
-## Learning Principle
-
-This repository is designed to teach:
-1. the theory
-2. the math
-3. small implementations from scratch
-4. the real-world libraries and tools
-5. the production patterns and frontier concepts
-
-That is the path from beginner to AI engineering.
+- deployment pipelines
+- autoscaling
+- observability
+- monitoring
+- security
 
 ## Suggested study order
 
-If you are a beginner, follow this route:
-
 1. Python
 2. Linux + Git
-3. Data structures and algorithms
-4. Statistics and probability
-5. Linear algebra
-6. NumPy and Pandas
-7. SQL and EDA
-8. Machine learning basics
-9. Deep learning
-10. CUDA and GPU basics
-11. DevOps and deployments
-12. LLMs and GenAI
-13. RL and post-training
-14. Agents and Agentic AI
-15. Frontier AI systems
+3. statistics + probability + linear algebra
+4. NumPy + Pandas + SQL
+5. ML theory + classical ML
+6. deep learning + PyTorch
+7. CUDA and GPU basics
+8. DevOps + Docker + K8s
+9. LLMs + GenAI
+10. RL + post-training
+11. agents and agentic AI
+12. distributed training and frontier AI
 
-## Practical Rule
+## Practical learning rule
 
 Never jump directly to trillion-parameter training.
 Instead:
-- train tiny models from scratch
+- build tiny versions from scratch
 - understand the mechanics
-- scale the ideas conceptually
-- then learn distributed training, inference, serving, and production scale
+- then scale the ideas conceptually
+- then learn distributed training, inference, and production deployment
 
-## Project Themes
+## Project themes
 
-This repo will eventually include projects such as:
+This repo eventually includes projects such as:
 - house price prediction
 - sentiment analysis
 - recommendation engine
@@ -259,26 +264,15 @@ This repo will eventually include projects such as:
 - chatbot
 - RAG app
 - AI agent with tools
+- GPU benchmark project
 - distributed training demo
-- inference optimization benchmark
-
-## Contributing
-
-This repository is intended as a learning curriculum and a workshop-style codebase.
-If you want to contribute:
-- add new concepts
-- add code examples
-- add notebooks
-- add project implementations
-- improve explanations
+- deployment project
 
 ## License
 
 This repository is for educational learning and experimentation.
 
 ---
-
-Start with the roadmap and syllabus, then work through each section in order.
 
 "From zero to frontier AI begins with fundamentals." 
 
